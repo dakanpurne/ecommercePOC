@@ -239,10 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				280251481F7CD21F00A19E33 /* Storage */,
-				28ECF1511F7BF0BB00DC3C51 /* AppDatastore */,
 				28ECF1521F7BF0BB00DC3C51 /* AppDelegate */,
-				28ECF15F1F7BF0BC00DC3C51 /* AppScreenNavigator */,
-				28ECF1541F7BF0BB00DC3C51 /* Categories */,
 				28ECF1561F7BF0BC00DC3C51 /* Constants */,
 				28ECF15B1F7BF0BC00DC3C51 /* Controller */,
 				28ECF1591F7BF0BC00DC3C51 /* Custom */,
@@ -251,7 +248,6 @@
 				28ECF1651F7BF10300DC3C51 /* Resources */,
 				28ECF1581F7BF0BC00DC3C51 /* Service */,
 				28ECF1601F7BF0BC00DC3C51 /* Util */,
-				28ECF1571F7BF0BC00DC3C51 /* Validation */,
 				28ECF1501F7BF0BB00DC3C51 /* View */,
 				28ECF12B1F7BEF6000DC3C51 /* LaunchScreen.storyboard */,
 				28ECF12E1F7BEF6000DC3C51 /* Info.plist */,
@@ -285,26 +281,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		28ECF1511F7BF0BB00DC3C51 /* AppDatastore */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AppDatastore;
-			sourceTree = "<group>";
-		};
 		28ECF1521F7BF0BB00DC3C51 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
 				28ECF1531F7BF0BB00DC3C51 /* AppDelegate.swift */,
 			);
 			path = AppDelegate;
-			sourceTree = "<group>";
-		};
-		28ECF1541F7BF0BB00DC3C51 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Categories;
 			sourceTree = "<group>";
 		};
 		28ECF1551F7BF0BC00DC3C51 /* Model */ = {
@@ -324,13 +306,6 @@
 				285EDA7A1F7C420500D1932C /* ServerConstants.swift */,
 			);
 			path = Constants;
-			sourceTree = "<group>";
-		};
-		28ECF1571F7BF0BC00DC3C51 /* Validation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Validation;
 			sourceTree = "<group>";
 		};
 		28ECF1581F7BF0BC00DC3C51 /* Service */ = {
@@ -369,13 +344,6 @@
 				285EDA6D1F7C419E00D1932C /* ProductsController */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		28ECF15F1F7BF0BC00DC3C51 /* AppScreenNavigator */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AppScreenNavigator;
 			sourceTree = "<group>";
 		};
 		28ECF1601F7BF0BC00DC3C51 /* Util */ = {
