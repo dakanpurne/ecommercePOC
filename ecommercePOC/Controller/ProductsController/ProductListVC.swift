@@ -7,20 +7,19 @@
 //
 
 import UIKit
+import CoreData
 
-class ProductListVC: BaseVC, UICollectionViewDelegate,UICollectionViewDataSource {
+
+class ProductListVC: BaseVC, UICollectionViewDelegate,UICollectionViewDataSource,ProductItemCellDelegate {
     
     lazy var productList = [ProductItemResponseModel]()
     @IBOutlet weak var collectionView: UICollectionView!
     var obj = ProductItemResponseModel()
-    
-    let reuseIdentifier = "productItemCell" // also enter this string as the cell identifier in the storyboard
-    var items = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48"]
-    
-    
+    let dbmanagerObj = DBOperationManager()
+    let reuseIdentifier = "productItemCell" 
+    var myProductObj : EntityProductList?
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         callProductListService()
     }
     
@@ -38,6 +37,9 @@ class ProductListVC: BaseVC, UICollectionViewDelegate,UICollectionViewDataSource
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! ProductItemCell
         
         obj = productList[indexPath.row]
+        cell.delegateCell = self
+        cell.indexPath = indexPath
+        
         cell.productName.text = obj.productname
         if obj.productImg != nil{
             ImageDownloadUtil.downloadImageFromURL(imageURL: obj.productImg, completionClosure: { (response) in
@@ -47,8 +49,29 @@ class ProductListVC: BaseVC, UICollectionViewDelegate,UICollectionViewDataSource
         cell.productPrice.text = kPriceLabel + obj.price!
         cell.vendorName.text = obj.vendorname
         cell.vendorAddress.text = obj.vendoraddress
-
+        
         return cell
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
+    func didTapCell(index: IndexPath) {
+        print("collection cell button click index >> \(index.row)")
+        let dbObj: NSEntityDescription? = NSEntityDescription.entity(forEntityName: kProductList, in: self.appDelegate.coreDataStack.managedObjectContext)
+        if dbObj != nil {
+            self.myProductObj = EntityProductList(entity: dbObj!, insertInto: self.appDelegate.coreDataStack.managedObjectContext)
+            obj = productList[index.row]
+            
+            self.myProductObj?.productname = obj.productname
+            self.myProductObj?.productImg = obj.productImg
+            self.myProductObj?.price = NumberFormatter().number(from: obj.price!)!.floatValue
+            self.myProductObj?.phoneNumber = obj.phoneNumber
+            self.myProductObj?.vendorname = obj.vendorname
+            self.myProductObj?.vendoraddress = obj.vendoraddress
+            self.appDelegate.coreDataStack.saveContext()
+        }
     }
     
     // MARK: - UICollectionViewDelegate protocol
@@ -62,6 +85,8 @@ class ProductListVC: BaseVC, UICollectionViewDelegate,UICollectionViewDataSource
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
     func callProductListService(){
         CustomProgressIndicator.startProgressView(contentView: self.view)
         if ReachabilityManager.isReachable() {

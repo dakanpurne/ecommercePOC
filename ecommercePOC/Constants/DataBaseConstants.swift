@@ -13,3 +13,6 @@ public let kDataBaseModelName = "ecommerce"
 public let kDataBaseModelExtention = "momd"
 public let kDataBaseSqlLiteUrl = "ecommerceObjectModel.sqlite"
 
+public let kProductList = "EntityProductList"
+
+

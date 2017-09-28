@@ -7,7 +7,9 @@
 //
 
 import UIKit
-
+protocol ProductItemCellDelegate: class {
+    func didTapCell(index: IndexPath)
+}
 class ProductItemCell: UICollectionViewCell {
     
     @IBOutlet weak var productImage: UIImageView!
@@ -16,4 +18,10 @@ class ProductItemCell: UICollectionViewCell {
     @IBOutlet weak var vendorName: UILabel!
     @IBOutlet weak var vendorAddress: UILabel!
     
+    var delegateCell:ProductItemCellDelegate?
+    var indexPath:IndexPath?
+    
+    @IBAction func buttonCellClick(_ sender: Any) {
+        delegateCell?.didTapCell(index: indexPath!)
+    }
 }
