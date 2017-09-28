@@ -81,7 +81,7 @@
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="o5V-Xc-ZE8" firstAttribute="top" secondItem="i0B-uV-Ybq" secondAttribute="bottom" constant="31.5" id="1YV-j8-Bj8"/>
                                             <constraint firstAttribute="trailing" secondItem="l4p-bn-aYj" secondAttribute="trailing" constant="20" id="2aP-ym-DZZ"/>
@@ -129,7 +129,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Products" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Products" image="format-list-bulleted" landscapeImage="format-list-bulleted" selectedImage="format-list-bulleted" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="collectionView" destination="0cN-Vw-TIG" id="oUY-l8-MeM"/>
                     </connections>
@@ -206,7 +206,6 @@
                                                     <rect key="frame" x="324" y="8" width="43" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="8gj-m8-qYW"/>
-                                                        <constraint firstAttribute="width" constant="43" id="ZUf-t4-Ieg"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -265,6 +264,7 @@
                                                 <constraint firstItem="2fW-pG-ddx" firstAttribute="leading" secondItem="7Xn-Tq-Fu0" secondAttribute="trailing" constant="7" id="yVW-Nv-wWR"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="woo-sF-A1g" secondAttribute="bottom" id="ROO-hx-hof"/>
                                             <constraint firstItem="woo-sF-A1g" firstAttribute="centerX" secondItem="GBr-rc-Kio" secondAttribute="centerX" id="htd-ki-HZC"/>
@@ -295,7 +295,6 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.37254901959999998" green="0.63137254899999995" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="FQM-3h-T8Q"/>
                                 </constraints>
@@ -316,9 +315,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Cart" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Cart" image="cart" landscapeImage="cart" selectedImage="cart" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="tableView" destination="KGw-WN-hHO" id="5m6-y6-yPk"/>
+                        <outlet property="totalPrice" destination="V3j-PE-skr" id="80B-dv-Pag"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -345,7 +345,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="cart" width="48" height="48"/>
+        <image name="format-list-bulleted" width="48" height="48"/>
     </resources>
 </document>

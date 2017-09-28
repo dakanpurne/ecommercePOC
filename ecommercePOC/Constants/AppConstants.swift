@@ -13,5 +13,8 @@ public let kAlertOKBtnTitle = "OK"
 public let kAlertCancelBtnTitle = "Cancel"
 
 public let kPriceLabel = "Price : "
+public let kTotalPrice = "Total Price :"
 
-
+// Alter options key
+public let kYes_Title = "Yes"
+public let kNo_Title = "No"

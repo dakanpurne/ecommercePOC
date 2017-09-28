@@ -59,6 +59,7 @@ class ProductListVC: BaseVC, UICollectionViewDelegate,UICollectionViewDataSource
     
     func didTapCell(index: IndexPath) {
         print("collection cell button click index >> \(index.row)")
+        
         let dbObj: NSEntityDescription? = NSEntityDescription.entity(forEntityName: kProductList, in: self.appDelegate.coreDataStack.managedObjectContext)
         if dbObj != nil {
             self.myProductObj = EntityProductList(entity: dbObj!, insertInto: self.appDelegate.coreDataStack.managedObjectContext)

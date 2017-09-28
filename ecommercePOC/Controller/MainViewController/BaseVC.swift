@@ -23,6 +23,20 @@ class BaseVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func makeCall(phoneNumber: String) {
+        let formattedNumber = phoneNumber.components(separatedBy:
+            NSCharacterSet.decimalDigits.inverted).joined(separator: "")
+        
+        let phoneUrl = "tel://\(formattedNumber)"
+        let url:NSURL = NSURL(string: phoneUrl)!
+        
+        if #available(iOS 10, *) {
+            UIApplication.shared.open(url as URL, options: [:], completionHandler:
+                nil)
+        } else {
+            UIApplication.shared.openURL(url as URL)
+        }
+    }
     
 }
 

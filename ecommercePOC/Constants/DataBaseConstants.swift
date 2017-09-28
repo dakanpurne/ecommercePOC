@@ -14,5 +14,7 @@ public let kDataBaseModelExtention = "momd"
 public let kDataBaseSqlLiteUrl = "ecommerceObjectModel.sqlite"
 
 public let kProductList = "EntityProductList"
+public let kProductName = "productname"
+public let kAlertWhileAdd = "Do you want add item to cart ?"
 
 
