@@ -17,6 +17,9 @@
 		2802513A1F7C91A000A19E33 /* ProductItemResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280251391F7C91A000A19E33 /* ProductItemResponseModel.swift */; };
 		2802513C1F7C95D200A19E33 /* ProductItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2802513B1F7C95D200A19E33 /* ProductItemCell.swift */; };
 		2802513E1F7CBD8900A19E33 /* ImageDownloadUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2802513D1F7CBD8800A19E33 /* ImageDownloadUtil.swift */; };
+		280251521F7CD21F00A19E33 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280251491F7CD21F00A19E33 /* CoreDataStack.swift */; };
+		280251591F7CD21F00A19E33 /* DBOperationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280251511F7CD21F00A19E33 /* DBOperationManager.swift */; };
+		2802515C1F7CEB6600A19E33 /* ecommerce.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2802515A1F7CEB6600A19E33 /* ecommerce.xcdatamodeld */; };
 		285EDA711F7C419E00D1932C /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285EDA6C1F7C419E00D1932C /* BaseVC.swift */; };
 		285EDA721F7C419E00D1932C /* ProductListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285EDA6E1F7C419E00D1932C /* ProductListVC.swift */; };
 		285EDA731F7C419E00D1932C /* CartItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285EDA701F7C419E00D1932C /* CartItemVC.swift */; };
@@ -61,6 +64,11 @@
 		280251391F7C91A000A19E33 /* ProductItemResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemResponseModel.swift; sourceTree = "<group>"; };
 		2802513B1F7C95D200A19E33 /* ProductItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemCell.swift; sourceTree = "<group>"; };
 		2802513D1F7CBD8800A19E33 /* ImageDownloadUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadUtil.swift; sourceTree = "<group>"; };
+		280251491F7CD21F00A19E33 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		280251511F7CD21F00A19E33 /* DBOperationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBOperationManager.swift; sourceTree = "<group>"; };
+		2802515B1F7CEB6600A19E33 /* ecommerce.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ecommerce.xcdatamodel; sourceTree = "<group>"; };
+		2802515D1F7CEBE300A19E33 /* EntityProductList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EntityProductList+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2802515E1F7CEBE300A19E33 /* EntityProductList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EntityProductList+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		285EDA6C1F7C419E00D1932C /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		285EDA6E1F7C419E00D1932C /* ProductListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListVC.swift; sourceTree = "<group>"; };
 		285EDA701F7C419E00D1932C /* CartItemVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartItemVC.swift; sourceTree = "<group>"; };
@@ -141,6 +149,26 @@
 			path = ProductModel;
 			sourceTree = "<group>";
 		};
+		280251481F7CD21F00A19E33 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				280251491F7CD21F00A19E33 /* CoreDataStack.swift */,
+				2802514A1F7CD21F00A19E33 /* DataModels */,
+				280251511F7CD21F00A19E33 /* DBOperationManager.swift */,
+				2802515A1F7CEB6600A19E33 /* ecommerce.xcdatamodeld */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		2802514A1F7CD21F00A19E33 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				2802515D1F7CEBE300A19E33 /* EntityProductList+CoreDataClass.swift */,
+				2802515E1F7CEBE300A19E33 /* EntityProductList+CoreDataProperties.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
 		285EDA6B1F7C419E00D1932C /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +235,7 @@
 		28ECF11F1F7BEF6000DC3C51 /* ecommercePOC */ = {
 			isa = PBXGroup;
 			children = (
+				280251481F7CD21F00A19E33 /* Storage */,
 				28ECF1511F7BF0BB00DC3C51 /* AppDatastore */,
 				28ECF1521F7BF0BB00DC3C51 /* AppDelegate */,
 				28ECF15F1F7BF0BC00DC3C51 /* AppScreenNavigator */,
@@ -578,12 +607,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				280251521F7CD21F00A19E33 /* CoreDataStack.swift in Sources */,
 				285EDA731F7C419E00D1932C /* CartItemVC.swift in Sources */,
 				285EDA801F7C420500D1932C /* AppConstants.swift in Sources */,
 				280251321F7C8BD900A19E33 /* ProductResponseModel.swift in Sources */,
 				2802513A1F7C91A000A19E33 /* ProductItemResponseModel.swift in Sources */,
 				280251341F7C8BE800A19E33 /* KServerResponseModel.swift in Sources */,
 				285EDA7E1F7C420500D1932C /* DataBaseConstants.swift in Sources */,
+				280251591F7CD21F00A19E33 /* DBOperationManager.swift in Sources */,
 				2802513E1F7CBD8900A19E33 /* ImageDownloadUtil.swift in Sources */,
 				2802513C1F7C95D200A19E33 /* ProductItemCell.swift in Sources */,
 				280251381F7C8D0000A19E33 /* CustomProgressIndicator.swift in Sources */,
@@ -592,6 +623,7 @@
 				285EDA7F1F7C420500D1932C /* ServerConstants.swift in Sources */,
 				285EDA711F7C419E00D1932C /* BaseVC.swift in Sources */,
 				280251361F7C8CC200A19E33 /* CustomAlert.swift in Sources */,
+				2802515C1F7CEB6600A19E33 /* ecommerce.xcdatamodeld in Sources */,
 				2802512D1F7C8B6E00A19E33 /* BaseService.swift in Sources */,
 				285EDA7D1F7C420500D1932C /* ErrorConstants.swift in Sources */,
 				2802512B1F7C8B3400A19E33 /* ProductListService.swift in Sources */,
@@ -897,6 +929,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2802515A1F7CEB6600A19E33 /* ecommerce.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2802515B1F7CEB6600A19E33 /* ecommerce.xcdatamodel */,
+			);
+			currentVersion = 2802515B1F7CEB6600A19E33 /* ecommerce.xcdatamodel */;
+			path = ecommerce.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 28ECF1151F7BEF6000DC3C51 /* Project object */;
 }
