@@ -8,15 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		2747D88406D4D0849C25C5F3 /* Pods_ecommercePOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846C0E09A4446E2AD9F713CA /* Pods_ecommercePOC.framework */; };
+		2802512B1F7C8B3400A19E33 /* ProductListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2802512A1F7C8B3400A19E33 /* ProductListService.swift */; };
+		2802512D1F7C8B6E00A19E33 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2802512C1F7C8B6E00A19E33 /* BaseService.swift */; };
+		280251321F7C8BD900A19E33 /* ProductResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280251311F7C8BD900A19E33 /* ProductResponseModel.swift */; };
+		280251341F7C8BE800A19E33 /* KServerResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280251331F7C8BE800A19E33 /* KServerResponseModel.swift */; };
+		280251361F7C8CC200A19E33 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280251351F7C8CC200A19E33 /* CustomAlert.swift */; };
+		280251381F7C8D0000A19E33 /* CustomProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280251371F7C8D0000A19E33 /* CustomProgressIndicator.swift */; };
+		2802513A1F7C91A000A19E33 /* ProductItemResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280251391F7C91A000A19E33 /* ProductItemResponseModel.swift */; };
+		285EDA711F7C419E00D1932C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285EDA6C1F7C419E00D1932C /* ViewController.swift */; };
+		285EDA721F7C419E00D1932C /* ProductListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285EDA6E1F7C419E00D1932C /* ProductListVC.swift */; };
+		285EDA731F7C419E00D1932C /* CartItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285EDA701F7C419E00D1932C /* CartItemVC.swift */; };
+		285EDA7D1F7C420500D1932C /* ErrorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285EDA781F7C420500D1932C /* ErrorConstants.swift */; };
+		285EDA7E1F7C420500D1932C /* DataBaseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285EDA791F7C420500D1932C /* DataBaseConstants.swift */; };
+		285EDA7F1F7C420500D1932C /* ServerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285EDA7A1F7C420500D1932C /* ServerConstants.swift */; };
+		285EDA801F7C420500D1932C /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285EDA7B1F7C420500D1932C /* AppConstants.swift */; };
+		285EDA841F7C432E00D1932C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 285EDA831F7C432E00D1932C /* Reachability.m */; };
+		285EDA861F7C434C00D1932C /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285EDA851F7C434B00D1932C /* ReachabilityManager.swift */; };
 		28ECF1281F7BEF6000DC3C51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28ECF1261F7BEF6000DC3C51 /* Main.storyboard */; };
 		28ECF12A1F7BEF6000DC3C51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28ECF1291F7BEF6000DC3C51 /* Assets.xcassets */; };
 		28ECF12D1F7BEF6000DC3C51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28ECF12B1F7BEF6000DC3C51 /* LaunchScreen.storyboard */; };
 		28ECF1381F7BEF6000DC3C51 /* ecommercePOCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ECF1371F7BEF6000DC3C51 /* ecommercePOCTests.swift */; };
 		28ECF1431F7BEF6000DC3C51 /* ecommercePOCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ECF1421F7BEF6000DC3C51 /* ecommercePOCUITests.swift */; };
 		28ECF1611F7BF0BC00DC3C51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ECF1531F7BF0BB00DC3C51 /* AppDelegate.swift */; };
-		28ECF1621F7BF0BC00DC3C51 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ECF15C1F7BF0BC00DC3C51 /* FirstViewController.swift */; };
-		28ECF1631F7BF0BC00DC3C51 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ECF15D1F7BF0BC00DC3C51 /* SecondViewController.swift */; };
-		28ECF1641F7BF0BC00DC3C51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ECF15E1F7BF0BC00DC3C51 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +50,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2802512A1F7C8B3400A19E33 /* ProductListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListService.swift; sourceTree = "<group>"; };
+		2802512C1F7C8B6E00A19E33 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		280251311F7C8BD900A19E33 /* ProductResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductResponseModel.swift; sourceTree = "<group>"; };
+		280251331F7C8BE800A19E33 /* KServerResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KServerResponseModel.swift; sourceTree = "<group>"; };
+		280251351F7C8CC200A19E33 /* CustomAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		280251371F7C8D0000A19E33 /* CustomProgressIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomProgressIndicator.swift; sourceTree = "<group>"; };
+		280251391F7C91A000A19E33 /* ProductItemResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemResponseModel.swift; sourceTree = "<group>"; };
+		285EDA6C1F7C419E00D1932C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		285EDA6E1F7C419E00D1932C /* ProductListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListVC.swift; sourceTree = "<group>"; };
+		285EDA701F7C419E00D1932C /* CartItemVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartItemVC.swift; sourceTree = "<group>"; };
+		285EDA781F7C420500D1932C /* ErrorConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorConstants.swift; sourceTree = "<group>"; };
+		285EDA791F7C420500D1932C /* DataBaseConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseConstants.swift; sourceTree = "<group>"; };
+		285EDA7A1F7C420500D1932C /* ServerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConstants.swift; sourceTree = "<group>"; };
+		285EDA7B1F7C420500D1932C /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		285EDA811F7C432E00D1932C /* ecommercePOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ecommercePOC-Bridging-Header.h"; sourceTree = "<group>"; };
+		285EDA821F7C432E00D1932C /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		285EDA831F7C432E00D1932C /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		285EDA851F7C434B00D1932C /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
 		28ECF11D1F7BEF6000DC3C51 /* ecommercePOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ecommercePOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28ECF1271F7BEF6000DC3C51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28ECF1291F7BEF6000DC3C51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,9 +80,6 @@
 		28ECF1421F7BEF6000DC3C51 /* ecommercePOCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ecommercePOCUITests.swift; sourceTree = "<group>"; };
 		28ECF1441F7BEF6000DC3C51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28ECF1531F7BF0BB00DC3C51 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		28ECF15C1F7BF0BC00DC3C51 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		28ECF15D1F7BF0BC00DC3C51 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		28ECF15E1F7BF0BC00DC3C51 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		71376F51509B1D51D7112638 /* Pods-ecommercePOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommercePOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-ecommercePOC/Pods-ecommercePOC.release.xcconfig"; sourceTree = "<group>"; };
 		7848B9ED6D5DC3AD08803DFC /* Pods-ecommercePOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommercePOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ecommercePOC/Pods-ecommercePOC.debug.xcconfig"; sourceTree = "<group>"; };
 		846C0E09A4446E2AD9F713CA /* Pods_ecommercePOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ecommercePOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +111,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2802512E1F7C8BD900A19E33 /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+				2802512F1F7C8BD900A19E33 /* CommonResponseModel */,
+				280251301F7C8BD900A19E33 /* ProductModel */,
+			);
+			path = ResponseModels;
+			sourceTree = "<group>";
+		};
+		2802512F1F7C8BD900A19E33 /* CommonResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				280251331F7C8BE800A19E33 /* KServerResponseModel.swift */,
+			);
+			path = CommonResponseModel;
+			sourceTree = "<group>";
+		};
+		280251301F7C8BD900A19E33 /* ProductModel */ = {
+			isa = PBXGroup;
+			children = (
+				280251311F7C8BD900A19E33 /* ProductResponseModel.swift */,
+				280251391F7C91A000A19E33 /* ProductItemResponseModel.swift */,
+			);
+			path = ProductModel;
+			sourceTree = "<group>";
+		};
+		285EDA6B1F7C419E00D1932C /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				285EDA6C1F7C419E00D1932C /* ViewController.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		285EDA6D1F7C419E00D1932C /* ProductsController */ = {
+			isa = PBXGroup;
+			children = (
+				285EDA6E1F7C419E00D1932C /* ProductListVC.swift */,
+			);
+			path = ProductsController;
+			sourceTree = "<group>";
+		};
+		285EDA6F1F7C419E00D1932C /* CartController */ = {
+			isa = PBXGroup;
+			children = (
+				285EDA701F7C419E00D1932C /* CartItemVC.swift */,
+			);
+			path = CartController;
+			sourceTree = "<group>";
+		};
+		285EDA751F7C41B400D1932C /* BaseService */ = {
+			isa = PBXGroup;
+			children = (
+				2802512C1F7C8B6E00A19E33 /* BaseService.swift */,
+			);
+			path = BaseService;
+			sourceTree = "<group>";
+		};
+		285EDA761F7C41B400D1932C /* ProductListService */ = {
+			isa = PBXGroup;
+			children = (
+				2802512A1F7C8B3400A19E33 /* ProductListService.swift */,
+			);
+			path = ProductListService;
+			sourceTree = "<group>";
+		};
 		28ECF1141F7BEF6000DC3C51 = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +273,7 @@
 		28ECF1551F7BF0BC00DC3C51 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2802512E1F7C8BD900A19E33 /* ResponseModels */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -186,6 +281,10 @@
 		28ECF1561F7BF0BC00DC3C51 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				285EDA7B1F7C420500D1932C /* AppConstants.swift */,
+				285EDA791F7C420500D1932C /* DataBaseConstants.swift */,
+				285EDA781F7C420500D1932C /* ErrorConstants.swift */,
+				285EDA7A1F7C420500D1932C /* ServerConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -200,6 +299,8 @@
 		28ECF1581F7BF0BC00DC3C51 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				285EDA751F7C41B400D1932C /* BaseService */,
+				285EDA761F7C41B400D1932C /* ProductListService */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -207,6 +308,7 @@
 		28ECF1591F7BF0BC00DC3C51 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				280251371F7C8D0000A19E33 /* CustomProgressIndicator.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -214,6 +316,10 @@
 		28ECF15A1F7BF0BC00DC3C51 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
+				285EDA851F7C434B00D1932C /* ReachabilityManager.swift */,
+				285EDA821F7C432E00D1932C /* Reachability.h */,
+				285EDA831F7C432E00D1932C /* Reachability.m */,
+				285EDA811F7C432E00D1932C /* ecommercePOC-Bridging-Header.h */,
 			);
 			path = Reachability;
 			sourceTree = "<group>";
@@ -221,9 +327,9 @@
 		28ECF15B1F7BF0BC00DC3C51 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				28ECF15C1F7BF0BC00DC3C51 /* FirstViewController.swift */,
-				28ECF15D1F7BF0BC00DC3C51 /* SecondViewController.swift */,
-				28ECF15E1F7BF0BC00DC3C51 /* ViewController.swift */,
+				285EDA6F1F7C419E00D1932C /* CartController */,
+				285EDA6B1F7C419E00D1932C /* MainViewController */,
+				285EDA6D1F7C419E00D1932C /* ProductsController */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -238,6 +344,7 @@
 		28ECF1601F7BF0BC00DC3C51 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				280251351F7C8CC200A19E33 /* CustomAlert.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -338,6 +445,7 @@
 				TargetAttributes = {
 					28ECF11C1F7BEF6000DC3C51 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					28ECF1321F7BEF6000DC3C51 = {
@@ -464,10 +572,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28ECF1631F7BF0BC00DC3C51 /* SecondViewController.swift in Sources */,
+				285EDA731F7C419E00D1932C /* CartItemVC.swift in Sources */,
+				285EDA801F7C420500D1932C /* AppConstants.swift in Sources */,
+				280251321F7C8BD900A19E33 /* ProductResponseModel.swift in Sources */,
+				2802513A1F7C91A000A19E33 /* ProductItemResponseModel.swift in Sources */,
+				280251341F7C8BE800A19E33 /* KServerResponseModel.swift in Sources */,
+				285EDA7E1F7C420500D1932C /* DataBaseConstants.swift in Sources */,
+				280251381F7C8D0000A19E33 /* CustomProgressIndicator.swift in Sources */,
+				285EDA721F7C419E00D1932C /* ProductListVC.swift in Sources */,
+				285EDA861F7C434C00D1932C /* ReachabilityManager.swift in Sources */,
+				285EDA7F1F7C420500D1932C /* ServerConstants.swift in Sources */,
+				285EDA711F7C419E00D1932C /* ViewController.swift in Sources */,
+				280251361F7C8CC200A19E33 /* CustomAlert.swift in Sources */,
+				2802512D1F7C8B6E00A19E33 /* BaseService.swift in Sources */,
+				285EDA7D1F7C420500D1932C /* ErrorConstants.swift in Sources */,
+				2802512B1F7C8B3400A19E33 /* ProductListService.swift in Sources */,
+				285EDA841F7C432E00D1932C /* Reachability.m in Sources */,
 				28ECF1611F7BF0BC00DC3C51 /* AppDelegate.swift in Sources */,
-				28ECF1641F7BF0BC00DC3C51 /* ViewController.swift in Sources */,
-				28ECF1621F7BF0BC00DC3C51 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,12 +755,15 @@
 			baseConfigurationReference = 7848B9ED6D5DC3AD08803DFC /* Pods-ecommercePOC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ecommercePOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mobility.ecommercePOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ecommercePOC/Reachability/ecommercePOC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -650,12 +774,14 @@
 			baseConfigurationReference = 71376F51509B1D51D7112638 /* Pods-ecommercePOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ecommercePOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mobility.ecommercePOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ecommercePOC/Reachability/ecommercePOC-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

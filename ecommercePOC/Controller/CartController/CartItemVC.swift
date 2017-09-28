@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class CartItemVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
