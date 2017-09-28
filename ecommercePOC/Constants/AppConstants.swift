@@ -12,4 +12,6 @@ public let kAlert = "Alert"
 public let kAlertOKBtnTitle = "OK"
 public let kAlertCancelBtnTitle = "Cancel"
 
+public let kPriceLabel = "Price : "
+
 

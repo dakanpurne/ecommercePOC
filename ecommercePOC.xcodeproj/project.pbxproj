@@ -15,7 +15,9 @@
 		280251361F7C8CC200A19E33 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280251351F7C8CC200A19E33 /* CustomAlert.swift */; };
 		280251381F7C8D0000A19E33 /* CustomProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280251371F7C8D0000A19E33 /* CustomProgressIndicator.swift */; };
 		2802513A1F7C91A000A19E33 /* ProductItemResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280251391F7C91A000A19E33 /* ProductItemResponseModel.swift */; };
-		285EDA711F7C419E00D1932C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285EDA6C1F7C419E00D1932C /* ViewController.swift */; };
+		2802513C1F7C95D200A19E33 /* ProductItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2802513B1F7C95D200A19E33 /* ProductItemCell.swift */; };
+		2802513E1F7CBD8900A19E33 /* ImageDownloadUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2802513D1F7CBD8800A19E33 /* ImageDownloadUtil.swift */; };
+		285EDA711F7C419E00D1932C /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285EDA6C1F7C419E00D1932C /* BaseVC.swift */; };
 		285EDA721F7C419E00D1932C /* ProductListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285EDA6E1F7C419E00D1932C /* ProductListVC.swift */; };
 		285EDA731F7C419E00D1932C /* CartItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285EDA701F7C419E00D1932C /* CartItemVC.swift */; };
 		285EDA7D1F7C420500D1932C /* ErrorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285EDA781F7C420500D1932C /* ErrorConstants.swift */; };
@@ -57,7 +59,9 @@
 		280251351F7C8CC200A19E33 /* CustomAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		280251371F7C8D0000A19E33 /* CustomProgressIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomProgressIndicator.swift; sourceTree = "<group>"; };
 		280251391F7C91A000A19E33 /* ProductItemResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemResponseModel.swift; sourceTree = "<group>"; };
-		285EDA6C1F7C419E00D1932C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2802513B1F7C95D200A19E33 /* ProductItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemCell.swift; sourceTree = "<group>"; };
+		2802513D1F7CBD8800A19E33 /* ImageDownloadUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadUtil.swift; sourceTree = "<group>"; };
+		285EDA6C1F7C419E00D1932C /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		285EDA6E1F7C419E00D1932C /* ProductListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListVC.swift; sourceTree = "<group>"; };
 		285EDA701F7C419E00D1932C /* CartItemVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartItemVC.swift; sourceTree = "<group>"; };
 		285EDA781F7C420500D1932C /* ErrorConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorConstants.swift; sourceTree = "<group>"; };
@@ -140,7 +144,7 @@
 		285EDA6B1F7C419E00D1932C /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
-				285EDA6C1F7C419E00D1932C /* ViewController.swift */,
+				285EDA6C1F7C419E00D1932C /* BaseVC.swift */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -149,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				285EDA6E1F7C419E00D1932C /* ProductListVC.swift */,
+				2802513B1F7C95D200A19E33 /* ProductItemCell.swift */,
 			);
 			path = ProductsController;
 			sourceTree = "<group>";
@@ -344,6 +349,7 @@
 		28ECF1601F7BF0BC00DC3C51 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				2802513D1F7CBD8800A19E33 /* ImageDownloadUtil.swift */,
 				280251351F7C8CC200A19E33 /* CustomAlert.swift */,
 			);
 			path = Util;
@@ -578,11 +584,13 @@
 				2802513A1F7C91A000A19E33 /* ProductItemResponseModel.swift in Sources */,
 				280251341F7C8BE800A19E33 /* KServerResponseModel.swift in Sources */,
 				285EDA7E1F7C420500D1932C /* DataBaseConstants.swift in Sources */,
+				2802513E1F7CBD8900A19E33 /* ImageDownloadUtil.swift in Sources */,
+				2802513C1F7C95D200A19E33 /* ProductItemCell.swift in Sources */,
 				280251381F7C8D0000A19E33 /* CustomProgressIndicator.swift in Sources */,
 				285EDA721F7C419E00D1932C /* ProductListVC.swift in Sources */,
 				285EDA861F7C434C00D1932C /* ReachabilityManager.swift in Sources */,
 				285EDA7F1F7C420500D1932C /* ServerConstants.swift in Sources */,
-				285EDA711F7C419E00D1932C /* ViewController.swift in Sources */,
+				285EDA711F7C419E00D1932C /* BaseVC.swift in Sources */,
 				280251361F7C8CC200A19E33 /* CustomAlert.swift in Sources */,
 				2802512D1F7C8B6E00A19E33 /* BaseService.swift in Sources */,
 				285EDA7D1F7C420500D1932C /* ErrorConstants.swift in Sources */,
